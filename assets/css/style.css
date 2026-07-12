@@ -933,25 +933,72 @@ h3 {
 }
 
 .business-contact-strip {
-  background: linear-gradient(135deg, var(--green), var(--deep));
-  border-radius: 32px;
-  color: white;
-  padding: 38px;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #fffdf7 0%, #f7fbf2 48%, #edf7ea 100%);
+  border: 1px solid rgba(42, 92, 64, .16);
+  border-radius: 30px;
+  color: var(--deep);
+  padding: 38px 42px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  flex-wrap: wrap
+  flex-wrap: wrap;
+  box-shadow: 0 18px 45px rgba(39, 72, 53, .10)
+}
+
+.business-contact-strip::before {
+  content: "";
+  position: absolute;
+  width: 190px;
+  height: 190px;
+  right: -70px;
+  top: -105px;
+  border-radius: 50%;
+  background: rgba(111, 157, 89, .10);
+  pointer-events: none
+}
+
+.business-contact-strip::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 24px;
+  bottom: 24px;
+  width: 5px;
+  border-radius: 0 10px 10px 0;
+  background: linear-gradient(180deg, #7c9b64, #c4a56a)
+}
+
+.business-contact-strip > * {
+  position: relative;
+  z-index: 1
 }
 
 .business-contact-strip h2 {
-  color: white
+  color: var(--deep);
+  margin-bottom: 8px
+}
+
+.business-contact-strip p {
+  color: rgba(35, 62, 46, .76);
+  margin: 0;
+  max-width: 650px
 }
 
 .business-contact-strip .btn-outline {
-  color: white;
-  background: rgba(255, 255, 255, .12);
-  border-color: rgba(255, 255, 255, .35)
+  color: var(--deep);
+  background: #fff;
+  border-color: rgba(42, 92, 64, .28);
+  box-shadow: 0 8px 20px rgba(39, 72, 53, .08)
+}
+
+.business-contact-strip .btn-outline:hover {
+  color: #fff;
+  background: var(--deep);
+  border-color: var(--deep);
+  transform: translateY(-2px)
 }
 
 .back-link {
@@ -6047,7 +6094,7 @@ html {
 
 .footer-address strong {
   color: #fff;
-  font-weight: 800;
+  font-weight: 80;
 }
 
 .footer .footer-address + a {
@@ -6074,4 +6121,186 @@ html {
 }
 .floating-whatsapp {
   white-space: nowrap;
+}
+
+
+/* Bumonii's product collection — 3 + 3 + 3 + 1 centered */
+.bumoniis-collection-section { overflow: hidden; }
+.bumoniis-product-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 24px;
+}
+.bumoniis-product-card {
+  grid-column: span 2;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid rgba(74, 48, 28, .12);
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 12px 30px rgba(51, 35, 22, .08);
+}
+.bumoniis-product-card:last-child { grid-column: 3 / span 2; }
+.bumoniis-product-card img {
+  display: block;
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  background: #f6f1e9;
+}
+.bumoniis-product-card h3 {
+  margin: 0;
+  padding: 18px 14px 20px;
+  text-align: center;
+  font-size: 1.12rem;
+  line-height: 1.35;
+  color: var(--deep, #173d26);
+}
+@media (max-width: 900px) {
+  .bumoniis-product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .bumoniis-product-card,
+  .bumoniis-product-card:last-child { grid-column: auto; }
+  .bumoniis-product-card:last-child { grid-column: 1 / -1; width: calc(50% - 12px); justify-self: center; }
+}
+@media (max-width: 620px) {
+  .bumoniis-product-grid { grid-template-columns: 1fr; gap: 18px; }
+  .bumoniis-product-card,
+  .bumoniis-product-card:last-child { grid-column: auto; width: 100%; }
+  .bumoniis-product-card img { height: 250px; }
+}
+
+
+/* Sarvathaa - What We Provide image cards */
+.sarvathaa-provide-card {
+  padding: 0 !important;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.sarvathaa-provide-card > img {
+  width: 100%;
+  height: 220px;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+.sarvathaa-provide-card .provide-card-content {
+  padding: 24px 24px 26px;
+  flex: 1;
+}
+
+.sarvathaa-provide-card h3 {
+  margin: 0 0 10px;
+}
+
+.sarvathaa-provide-card p {
+  margin: 0;
+}
+
+@media (max-width: 980px) {
+  .sarvathaa-provide-card > img { height: 210px; }
+}
+
+@media (max-width: 620px) {
+  .sarvathaa-provide-card > img { height: 230px; }
+  .sarvathaa-provide-card .provide-card-content { padding: 21px 20px 24px; }
+}
+
+
+/* ===== Our Business right-side images + refreshed Need Help panels ===== */
+.businesses .business-card.logo-card,
+.businesses .business-card.featured.logo-card {
+  grid-template-columns: 220px minmax(0, 1fr) 270px !important;
+  overflow: hidden !important;
+}
+
+.businesses .business-card-photo {
+  width: 270px;
+  height: 172px;
+  justify-self: end;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 12px 28px rgba(25, 45, 33, .13);
+  background: #f3f0e9;
+}
+
+.businesses .business-card-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform .45s ease;
+}
+
+.businesses .business-card.logo-card:hover .business-card-photo img {
+  transform: scale(1.045);
+}
+
+/* New warm premium colour for Need Help sections */
+.business-contact-strip {
+  background: linear-gradient(135deg, #fff5ee 0%, #fffaf5 48%, #f6e8dc 100%) !important;
+  border: 1px solid rgba(164, 92, 54, .18) !important;
+  box-shadow: 0 18px 46px rgba(123, 72, 43, .12) !important;
+}
+.business-contact-strip::before {
+  background: rgba(205, 132, 91, .13) !important;
+}
+.business-contact-strip::after {
+  background: linear-gradient(180deg, #c96f45, #e7b47d) !important;
+}
+.business-contact-strip h2 {
+  color: #613821 !important;
+}
+.business-contact-strip p {
+  color: rgba(83, 54, 38, .78) !important;
+}
+.business-contact-strip .btn-outline {
+  color: #713f26 !important;
+  background: #ffffff !important;
+  border-color: rgba(164, 92, 54, .30) !important;
+  box-shadow: 0 8px 20px rgba(123, 72, 43, .10) !important;
+}
+.business-contact-strip .btn-outline:hover {
+  color: #ffffff !important;
+  background: #9b5332 !important;
+  border-color: #9b5332 !important;
+}
+
+@media (max-width: 1050px) {
+  .businesses .business-card.logo-card,
+  .businesses .business-card.featured.logo-card {
+    grid-template-columns: 170px minmax(0, 1fr) 220px !important;
+    gap: 20px !important;
+  }
+  .businesses .business-card-photo {
+    width: 220px;
+    height: 155px;
+  }
+}
+
+@media (max-width: 800px) {
+  .businesses .business-card.logo-card,
+  .businesses .business-card.featured.logo-card {
+    grid-template-columns: 150px minmax(0, 1fr) !important;
+  }
+  .businesses .business-card-photo {
+    grid-column: 1 / -1;
+    width: 100%;
+    height: 220px;
+    justify-self: stretch;
+  }
+}
+
+@media (max-width: 620px) {
+  .businesses .business-card.logo-card,
+  .businesses .business-card.featured.logo-card {
+    grid-template-columns: 1fr !important;
+  }
+  .businesses .business-card-photo {
+    height: 210px;
+  }
 }
