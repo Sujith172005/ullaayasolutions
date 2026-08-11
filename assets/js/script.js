@@ -101,33 +101,27 @@ if ('IntersectionObserver' in window) {
 
 const slides = [
   {
-    eyebrow: 'Bumoniis Baking & Chocolates',
     title: 'Buy Premium Chocolates, Bakes and Desserts',
     text: 'Our creations are shaped by professional expertise, premium ingredients, and true craftsmanship, we craft premium pastries, desserts, chocolates, and confections Handcrafted with precision. Created with purpose.',
     logo: 'assets/images/bumoniis-logo-clean.png',
     brand: 'bumoniis',
-    tagOne: 'Chocolates',
-    tagTwo: 'Baked Products',
+    tagTwo: 'In-House Brand',
     link: 'bumoniis.html'
   },
   {
-    eyebrow: 'Osunss B2B Food Solution',
     title: 'Expertise. Craftsmanship. Business Success.',
     text: 'From premium handcrafted products to complete business support, we provide the knowledge, resources, and guidance needed to turn food business ideas into successful ventures.',
     logo: 'assets/images/osunss-logo-clean.png',
     brand: 'osunss',
-    tagOne: 'B2B Supply',
-    tagTwo: 'Packaging Support',
+    tagTwo: 'Business Enablement Solutions',
     link: 'osunss.html'
   },
   {
-    eyebrow: 'Sarvathaa Learning & Practice',
     title: 'Where Skills Become Businesses',
     text: 'We bring together professional training, commercial facilities, and practical business support to help aspiring bakers move confidently from learning to launching. Learn. Create. Launch. Grow.',
     logo: 'assets/images/sarvathaa-logo-clean.png',
     brand: 'sarvathaa',
-    tagOne: 'Courses',
-    tagTwo: 'Practice Center',
+    tagTwo: 'Baking Enterpreneur Solutions',
     link: 'sarvathaa.html'
   }
 ];
@@ -167,7 +161,7 @@ if (slideTitle) {
     if (slideTagTwo) slideTagTwo.textContent = item.tagTwo;
     if (slidePrimary) {
       slidePrimary.href = item.link;
-      slidePrimary.textContent = index === 0 ? 'Explore Our Businesses' : 'View Full Information';
+      slidePrimary.textContent = index === 0 ? 'View Full Information' : 'View Full Information';
     }
     dots.forEach(dot => dot.classList.toggle('active', Number(dot.dataset.slide) === index));
   }
