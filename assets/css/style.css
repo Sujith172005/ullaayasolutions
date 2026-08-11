@@ -167,7 +167,7 @@ img {
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: .14em;
-  font-size: .78rem;
+  font-size: .98rem;
   margin-bottom: 16px
 }
 
@@ -192,7 +192,7 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(2.05rem, 4vw, 4rem);
+  font-size: clamp(1.1rem, 3vw, 3rem);
   letter-spacing: -.035em
 }
 
@@ -306,7 +306,7 @@ h3 {
 }
 
 .section {
-  padding: 96px 0
+  padding: 46px 0
 }
 
 .two-col,
@@ -320,11 +320,17 @@ h3 {
 
 .section-copy p:not(.eyebrow),
 .section-head p {
-  color: var(--muted);
+  color: var(--text);
   font-size: 1.05rem;
   margin-top: 16px
 }
 
+.inside-section{
+font-size: 1.15rem !important;
+line-height: 1.85 !important;
+text-align: center;
+margin-bottom: 10px;
+}
 .about-panel,
 .contact-form,
 .business-card,
@@ -365,7 +371,7 @@ h3 {
 .section-head {
   text-align: center;
   max-width: 760px;
-  margin: 0 auto 48px
+  margin: 0 auto 25px
 }
 
 .business-grid {
@@ -952,7 +958,6 @@ h3 {
   content: "";
   position: absolute;
   width: 190px;
-  height: 190px;
   right: -70px;
   top: -105px;
   border-radius: 50%;
@@ -2827,8 +2832,15 @@ h2 {
 
 .section-head p,
 .section-copy p:not(.eyebrow) {
-  font-size: 1.14rem !important;
-  line-height: 1.85 !important;
+  font-size: 1.03rem !important;
+  line-height: 1.57 !important;
+}
+.about-text{
+   font-size: 1.03rem !important;
+   line-height: 1.57!important;
+   text-align: justify;
+   color: (var(--text));
+
 }
 
 .about-panel h3,
@@ -4641,7 +4653,7 @@ h3 {
 .businesses .business-card p:not(.category),
 .section.businesses .business-card p:not(.category) {
   max-width: 720px !important;
-  margin: 0 auto !important;
+  margin: auto !important;
   font-size: 1.08rem !important;
   line-height: 1.6 !important;
 }
@@ -4956,7 +4968,7 @@ body {
 }
 
 #slideTitle {
-  min-height: 3.2em !important;
+  min-height: 2.2em !important;
 }
 
 #slideText {
@@ -6140,7 +6152,7 @@ html {
   background: #fff;
   box-shadow: 0 12px 30px rgba(51, 35, 22, .08);
 }
-.bumoniis-product-card:last-child { grid-column: 3 / span 2; }
+.bumoniis-product-card:last-child { grid-column: 3 / span ; }
 .bumoniis-product-card img {
   display: block;
   width: 100%;
@@ -6253,10 +6265,11 @@ html {
   background: linear-gradient(180deg, #c96f45, #e7b47d) !important;
 }
 .business-contact-strip h2 {
-  color: #613821 !important;
+  color: #0e0e0e !important;
 }
 .business-contact-strip p {
-  color: rgba(83, 54, 38, .78) !important;
+  color: rgba(12, 11, 11, 0.78) !important;
+  font-size: 20px;
 }
 .business-contact-strip .btn-outline {
   color: #713f26 !important;
@@ -6303,4 +6316,32 @@ html {
   .businesses .business-card-photo {
     height: 210px;
   }
+}
+.hero-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 48px;
+}
+
+.website-box {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 300px;
+    padding: 18px 30px;
+    border: 2px solid #5a351f;
+    border-radius: 30px;
+    background: transparent;
+    color: #5a351f;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s ease;
+    box-sizing: border-box;
+}
+
+.website-box:hover {
+    background: #20b957;
+    border-color: #20b957;
+    color: white;
 }

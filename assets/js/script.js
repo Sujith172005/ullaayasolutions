@@ -113,7 +113,7 @@ const slides = [
   {
     eyebrow: 'Bumoniis Baking & Chocolates',
     title: 'Buy Premium Chocolates, Bakes and Desserts',
-    text: 'Bumoniis serves customers with premium chocolates, confectionery, brownies, cookies, cakes, desserts, custom orders and bulk product options.',
+    text: 'Our creations are shaped by professional expertise, premium ingredients, and true craftsmanship, we craft premium pastries, desserts, chocolates, and confections Handcrafted with precision. Created with purpose.',
     logo: 'assets/images/bumoniis-logo-clean.png',
     brand: 'bumoniis',
     tagOne: 'Chocolates',
@@ -122,8 +122,8 @@ const slides = [
   },
   {
     eyebrow: 'Osunss B2B Food Solution',
-    title: 'B2B Supply, Packaging and Business Support',
-    text: 'Osunss helps cafés, bakeries, resellers and food businesses with bulk supply, product quantity planning, packaging guidance and delivery support.',
+    title: 'Expertise. Craftsmanship. Business Success.',
+    text: 'From premium handcrafted products to complete business support, we provide the knowledge, resources, and guidance needed to turn food business ideas into successful ventures.',
     logo: 'assets/images/osunss-logo-clean.png',
     brand: 'osunss',
     tagOne: 'B2B Supply',
@@ -132,8 +132,8 @@ const slides = [
   },
   {
     eyebrow: 'Sarvathaa Learning & Practice',
-    title: 'Learn Baking, Practice and Start With Confidence',
-    text: 'Sarvathaa supports learners and business beginners with recorded courses, offline training, practice area, baking items, packaging and incubation support.',
+    title: 'Where Skills Become Businesses',
+    text: 'We bring together professional training, commercial facilities, and practical business support to help aspiring bakers move confidently from learning to launching. Learn. Create. Launch. Grow.',
     logo: 'assets/images/sarvathaa-logo-clean.png',
     brand: 'sarvathaa',
     tagOne: 'Courses',
