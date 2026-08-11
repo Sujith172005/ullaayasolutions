@@ -101,16 +101,6 @@ if ('IntersectionObserver' in window) {
 
 const slides = [
   {
-    eyebrow: 'Parent Business Platform',
-    title: 'Learn, Make, Pack and Grow With One Platform',
-    text: 'Ullaaya helps customers, baking learners and food business owners move from idea to product, packaging, practice, bulk support and customer delivery.',
-    logo: 'assets/images/ullaaya-logo-clean.png',
-    brand: 'ullaaya',
-    tagOne: 'Parent Brand',
-    tagTwo: 'Business Network',
-    link: '#businesses'
-  },
-  {
     eyebrow: 'Bumoniis Baking & Chocolates',
     title: 'Buy Premium Chocolates, Bakes and Desserts',
     text: 'Our creations are shaped by professional expertise, premium ingredients, and true craftsmanship, we craft premium pastries, desserts, chocolates, and confections Handcrafted with precision. Created with purpose.',
