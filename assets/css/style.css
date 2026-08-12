@@ -40,7 +40,7 @@ img {
 }
 
 .container {
-  width: min(1250px, 92%);
+  width: min(1270px, 92%);
   margin: auto
 }
 
@@ -327,7 +327,6 @@ h3 {
 
 .inside-section{
 font-size: 1.01rem !important;
-line-height: 1.85 !important;
 text-align: center;
 margin-bottom: 12px;
 }
@@ -3639,6 +3638,8 @@ body {
 h1,h2  { font-family: var(--heading-font) !important;
   color: #111a14 !important;
   font-weight: 800 !important;
+  font-size: 3.2rem;
+  margin-bottom: 20px;
 }
 h3 {
   font-family: var(--heading-font) !important;
@@ -3794,11 +3795,62 @@ h3 {
   color: #071b0f !important;
 }
 
-.contact-center .contact-cards {
-  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-  max-width: 560px !important;
+.contact-cards {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 16px !important;
 }
 
+.contact-cards .join-us-btn {
+    background: #25D366 !important;
+    color: white !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+    padding: 16px 28px !important;
+    border-radius: 30px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-width: 120px !important;
+    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.25) !important;
+    transition: 0.3s ease !important;
+}
+
+.contact-cards .join-us-btn:hover {
+    background: #20bd5a !important;
+    transform: translateY(-2px);
+}
+
+.whatsapp-nav {
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50% !important;
+    background: #25D366 !important;
+    color: #fff !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    text-decoration: none !important;
+    font-size: 27px !important;
+
+    margin-left: 4px !important;
+    flex-shrink: 0 !important;
+}
+
+.whatsapp-nav i {
+    display: block !important;
+    color: #fff !important;
+    font-size: 27px !important;
+}
+
+.whatsapp-nav:hover {
+    background: #20bd5a !important;
+    color:#20bd5a!important;
+    transform: scale(1.05);
+}
 @media(max-width:980px) {
   .hero.business-slider,
   .hero {
@@ -4369,7 +4421,7 @@ h3 {
 }
 
 .hero-text {
-  font-size: .96rem !important;
+  font-size: 1.1rem !important;
   line-height: 1.6 !important;
   max-width: 570px !important;
   margin: 14px 0 18px !important;
@@ -5050,7 +5102,7 @@ body {
 #home.hero.business-slider .mini-card.bottom-card {
     position: absolute !important;
 
-    bottom: 8px !important;
+    bottom: 20px !important;
 
     left: 50% !important;
     right: auto !important;
@@ -6457,8 +6509,8 @@ html {
 .business-page-hero .business-page-logo-wrap .business-page-logo img {
   width: auto !important;
   height: auto !important;
-  max-width: 94% !important;
-  max-height: 74% !important;
+  max-width: 95% !important;
+  max-height: 94% !important;
   object-fit: contain !important;
   object-position: center !important;
   display: block !important;
@@ -6469,7 +6521,7 @@ html {
   position: absolute !important;
   left: 50% !important;
   right: auto !important;
-  bottom: 8px !important;
+  bottom: 20px !important;
   transform: translateX(-50%) !important;
   margin: 0 !important;
   z-index: 10 !important;
@@ -6492,4 +6544,14 @@ html {
 
 .footer-grid {
     grid-template-columns: 1.fr 1.5fr 1fr 1.5fr !important;
+}
+/* Bumonii's logo - increase size */
+section.businesses .business-logo-box.business-logo-bumoniis img {
+    width: 280px !important;
+    height: 200px !important;
+    max-width: none !important;
+    max-height: none !important;
+    object-fit: contain !important;
+    object-position: center !important;
+    margin: 0 auto !important;
 }

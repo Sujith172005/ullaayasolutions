@@ -118,7 +118,7 @@ const slides = [
   },
   {
     title: 'Where Skills Become Businesses',
-    text: 'We bring together professional training, commercial facilities, and practical business support to help aspiring bakers move confidently from learning to launching. Learn. Create. Launch. Grow.',
+    text: 'We bring together professional training, commercial facilities, and practical business support to help aspiring bakers move confidently from learning to launching.',
     logo: 'assets/images/sarvathaa-logo-clean.png',
     brand: 'sarvathaa',
     tagTwo: 'Baking Entrepreneur Solutions',
