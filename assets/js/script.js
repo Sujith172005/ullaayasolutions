@@ -155,13 +155,14 @@ if (slideTitle) {
         slideLogo.onload = () => { slideLogo.style.opacity = '1'; };
         // fallback in case image is cached
         requestAnimationFrame(() => { slideLogo.style.opacity = '1'; });
-      }, 90);
+      }, 100);
     }
     if (slideTagOne) slideTagOne.textContent = item.tagOne;
     if (slideTagTwo) slideTagTwo.textContent = item.tagTwo;
+    if (slideTagOne) slideTagOne.textContent = item.tagOne;
     if (slidePrimary) {
       slidePrimary.href = item.link;
-      slidePrimary.textContent = index === 0 ? 'View Full Information' : 'View Full Information';
+      slidePrimary.textContent = index === 0 ? 'www.bumoniis.com' : index === 1 ? 'www.osunss.com' : 'www.sarvathaa.com';
     }
     dots.forEach(dot => dot.classList.toggle('active', Number(dot.dataset.slide) === index));
   }

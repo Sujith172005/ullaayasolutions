@@ -326,7 +326,7 @@ h3 {
 }
 
 .inside-section{
-font-size: 1.1rem !important;
+font-size: 1.01rem !important;
 line-height: 1.85 !important;
 text-align: center;
 margin-bottom: 10px;
@@ -882,7 +882,7 @@ margin-bottom: 10px;
 }
 
 .detail-section {
-  padding: 84px 0
+  padding: 50px 0
 }
 
 .detail-grid {
@@ -1623,7 +1623,7 @@ h1 {
 }
 
 .section.businesses {
-  padding-top: 90px;
+  padding-top: 50px;
   background: linear-gradient(180deg, #f2fcf5 0%, #fff 100%)
 }
 
@@ -3627,10 +3627,13 @@ body {
 .nav-links,
 .nav-links a,
 .btn,
-.card-link,
 .contact-cards a {
   font-family: var(--body-font) !important;
   letter-spacing: .015em;
+}
+
+.card-link {
+  letter-spacing: normal !important;
 }
 
 h1,
@@ -3772,10 +3775,10 @@ h3 {
 }
 
 .businesses .business-card .card-link {
-  justify-self: end !important;
+  justify-self: center !important;
   align-self: center !important;
   white-space: nowrap !important;
-  margin: 0 !important;
+  margin: 0 auto !important;
   padding: 13px 18px !important;
   background: #124f26 !important;
   color: #ffffff !important;
@@ -3969,9 +3972,9 @@ h3 {
 
 .business-card .card-link {
   align-self: center !important;
-  justify-self: end !important;
+  justify-self: center !important;
   white-space: nowrap !important;
-  margin: 0 !important;
+  margin: 0 auto !important;
   padding: 13px 20px !important;
   font-size: .95rem !important;
   font-weight: 900 !important;
@@ -4033,7 +4036,7 @@ h3 {
   }
   .business-card .card-link {
     grid-column: 1 / -1 !important;
-    justify-self: start !important;
+    justify-self: center !important;
   }
   .business-logo-box {
     width: 170px !important;
@@ -4255,8 +4258,8 @@ h3 {
 
 .business-card.logo-card .card-link {
   align-self: center !important;
-  justify-self: end !important;
-  margin: 0 !important;
+  justify-self: center !important;
+  margin: 0 auto !important;
   white-space: nowrap !important;
 }
 
@@ -4303,7 +4306,7 @@ h3 {
   .slider-prev { left: 8% !important; }
   .slider-next { right: 8% !important; }
   .business-card.logo-card { grid-template-columns: 150px 1fr !important; }
-  .business-card.logo-card .card-link { grid-column: 2 !important; justify-self: start !important; margin-top: 14px !important; }
+  .business-card.logo-card .card-link { grid-column: 2 !important; justify-self: center !important; margin-top: 14px !important; }
   .business-logo-box { width: 150px !important; }
   .service-flow { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
 }
@@ -4579,7 +4582,7 @@ h3 {
   .hero-card { max-height: none !important; padding: 20px 54px !important; }
   .logo-orbit.slider-logo-wrap { width: min(330px, 74vw) !important; min-width: 260px !important; }
   .business-card.logo-card { grid-template-columns: 180px 1fr !important; gap: 24px !important; }
-  .business-card.logo-card .card-link { grid-column: 2 !important; justify-self: start !important; }
+  .business-card.logo-card .card-link { grid-column: 2 !important; justify-self: center !important; }
   .business-logo-box { width: 180px !important; }
 }
 
@@ -4658,11 +4661,12 @@ h3 {
 
 .businesses .business-card .card-link,
 .section.businesses .business-card .card-link {
-  justify-self: end !important;
+  justify-self: center !important;
   align-self: center !important;
   text-align: center !important;
-  width: 90% !important;
   max-width: 220px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 .provide .section-head h2,
@@ -5968,9 +5972,9 @@ html {
   }
 
   #home.hero.business-slider .hero-card {
-    min-height: 320px !important;
-    height: 320px !important;
-    max-height: 320px !important;
+    min-height: 360px !important;
+    height: 360px !important;
+    max-height: 360px !important;
     padding: 20px 54px !important;
     align-self: center !important;
     overflow: hidden !important;
@@ -6090,6 +6094,7 @@ html {
   margin-top: 18px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .hero-more-info .btn {
@@ -6336,7 +6341,6 @@ html {
 }
 .hero-actions {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
     min-height: 48px;
 }
