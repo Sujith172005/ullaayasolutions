@@ -6148,7 +6148,6 @@ html {
 .footer-address strong {
   color: var(--deep) !important;
   display: inline-block;
-  margin-bottom: 6px;
 }
 .footer .footer-address + a {
   margin-top: 6px !important;
