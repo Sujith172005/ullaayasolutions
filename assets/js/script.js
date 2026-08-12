@@ -121,7 +121,7 @@ const slides = [
     text: 'We bring together professional training, commercial facilities, and practical business support to help aspiring bakers move confidently from learning to launching. Learn. Create. Launch. Grow.',
     logo: 'assets/images/sarvathaa-logo-clean.png',
     brand: 'sarvathaa',
-    tagTwo: 'Baking Enterpreneur Solutions',
+    tagTwo: 'Baking Entrepreneur Solutions',
     link: 'sarvathaa.html'
   }
 ];
