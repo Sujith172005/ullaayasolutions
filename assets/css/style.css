@@ -5461,8 +5461,8 @@ html {
 
   .businesses .business-logo-osunss img,
   .section.businesses .business-logo-osunss img {
-    max-width: 88% !important;
-    max-height: 98% !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
   }
 
   .businesses .business-logo-sarvathaa img,
@@ -6550,7 +6550,7 @@ html {
 }
 /* Bumonii's logo - increase size */
 section.businesses .business-logo-box.business-logo-bumoniis img {
-    width: 280px !important;
+    width: 200px !important;
     height: 200px !important;
     max-width: none !important;
     max-height: none !important;
