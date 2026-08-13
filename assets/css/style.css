@@ -5462,13 +5462,13 @@ html {
   .businesses .business-logo-osunss img,
   .section.businesses .business-logo-osunss img {
     max-width: 100% !important;
-    max-height: 100% !important;
+    max-height: 85% !important;
   }
 
   .businesses .business-logo-sarvathaa img,
   .section.businesses .business-logo-sarvathaa img {
     max-width: 100% !important;
-    max-height: 94% !important;
+    max-height: 100% !important;
   }
 }
 
