@@ -6558,3 +6558,63 @@ section.businesses .business-logo-box.business-logo-bumoniis img {
     object-position: center !important;
     margin: 0 auto !important;
 }
+
+/* ===== FINAL USER REQUEST: home last-section + paragraph alignment + mobile grid ===== */
+#contact .contact-center {
+  width: 100%;
+}
+#contact .section-copy {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+#contact .section-copy > p:not(.eyebrow) {
+  max-width: 780px;
+  margin: 16px auto 0 !important;
+  text-align: center !important;
+  line-height: 1.65 !important;
+}
+#contact .contact-cards {
+  width: 100%;
+  max-width: 760px;
+  margin: 26px auto 0 !important;
+}
+#contact .contact-cards .contact-cards {
+  width: 100%;
+  display: flex !important;
+  align-items: stretch !important;
+  justify-content: center !important;
+  gap: 16px !important;
+  flex-wrap: wrap;
+}
+#contact .contact-cards .contact-cards > a {
+  box-sizing: border-box;
+  margin: 0 !important;
+}
+@media (max-width: 620px) {
+  #contact .section-copy > p:not(.eyebrow) {
+    width: min(100%, 92vw);
+    text-align: center !important;
+    line-height: 1.6 !important;
+  }
+  #contact .contact-cards,
+  #contact .contact-cards .contact-cards {
+    width: 100%;
+    max-width: 100%;
+  }
+  #contact .contact-cards .contact-cards {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 12px !important;
+  }
+  #contact .contact-cards .contact-cards > a {
+    width: 100% !important;
+    max-width: 100% !important;
+    justify-content: center !important;
+  }
+}
+
+/* Keep all enquiry/phone links centered and consistently clickable on mobile. */
+.floating-whatsapp {
+  z-index: 1000;
+}
