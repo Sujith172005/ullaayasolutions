@@ -6618,3 +6618,131 @@ section.businesses .business-logo-box.business-logo-bumoniis img {
 .floating-whatsapp {
   z-index: 1000;
 }
+
+/* Aligned brand rows and matching website buttons. */
+@media (min-width: 801px) {
+  #businesses .business-card.logo-card {
+    grid-template-columns: 235px minmax(0, 1fr) 270px !important;
+  }
+}
+@media (min-width: 801px) and (max-width: 1050px) {
+  #businesses .business-card.logo-card {
+    grid-template-columns: 170px minmax(0, 1fr) 220px !important;
+  }
+  #businesses .business-logo-box {
+    width: 170px !important;
+  }
+}
+#businesses .business-card-info {
+  width: 100% !important;
+  min-width: 0;
+}
+#businesses .business-card .card-link {
+  box-sizing: border-box;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 220px !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  min-height: 52px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: center !important;
+  animation: brand-button-blink 2s ease-in-out infinite;
+}
+@keyframes brand-button-blink {
+  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(195, 180, 7, 0); }
+  50% { opacity: .72; box-shadow: 0 0 0 6px rgba(185, 160, 17, 0.24); }
+}
+#businesses .card-link:hover,
+#businesses .card-link:focus-visible {
+  animation: none;
+  opacity: 1;
+}
+@media (prefers-reduced-motion: reduce) {
+  #businesses .business-card .card-link { animation: none; }
+}
+
+/* Larger website buttons with the original blink timing and smoky grey colour. */
+#businesses .business-card .card-link,
+#home #slidePrimary,
+.business-page-hero .btn.btn-primary,
+.website-box .card-link {
+  box-sizing: border-box !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 270px !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  min-height: 64px !important;
+  padding: 16px 22px !important;
+  font-size: 21px !important;
+  font-weight: 700 !important;
+  line-height: 1.35 !important;
+  text-align: center !important;
+  overflow-wrap: anywhere;
+  background: #175c18 !important;
+  color: #ffffff !important;
+  animation: brand-button-blink 1.80s ease-in-out infinite;
+}
+#businesses .business-card .card-link:hover,
+#home #slidePrimary:hover,
+.business-page-hero .btn.btn-primary:hover,
+.website-box .card-link:hover,
+#businesses .business-card .card-link:focus-visible,
+#home #slidePrimary:focus-visible,
+.business-page-hero .btn.btn-primary:focus-visible,
+.website-box .card-link:focus-visible { animation: none; opacity: 1; }
+@media (max-width: 620px) {
+#businesses .business-card .card-link,
+#home #slidePrimary,
+.business-page-hero .btn.btn-primary,
+.website-box .card-link { width: 250px !important; min-height: 60px !important; font-size: 19px !important; padding: 15px 18px !important; }
+}
+@media (prefers-reduced-motion: reduce) {
+#businesses .business-card .card-link,
+#home #slidePrimary,
+.business-page-hero .btn.btn-primary,
+.website-box .card-link { animation: none; }
+}
+/* Shared animation matches the home business buttons exactly. */
+@property --matched-halo-size { syntax: "<length>"; inherits: false; initial-value: 0px; }
+@property --matched-halo-color { syntax: "<color>"; inherits: false; initial-value: rgba(195,180,7,0); }
+@property --matched-button-opacity { syntax: "<number>"; inherits: false; initial-value: 1; }
+#businesses .business-card .card-link,
+#home a#slidePrimary.btn.btn-primary,
+.business-page-hero .btn.btn-primary,
+.website-box .card-link {
+  border-radius: 999px !important;
+  box-shadow: 0 0 0 var(--matched-halo-size) var(--matched-halo-color) !important;
+  opacity: var(--matched-button-opacity) !important;
+  animation: matched-business-blink 1.8s ease-in-out infinite !important;
+}
+@keyframes matched-business-blink {
+  0%, 100% {
+    --matched-button-opacity: 1;
+    --matched-halo-size: 0px;
+    --matched-halo-color: rgba(195,180,7,0);
+  }
+  50% {
+    --matched-button-opacity: .72;
+    --matched-halo-size: 6px;
+    --matched-halo-color: rgba(185,160,17,.24);
+  }
+}
+#businesses .business-card .card-link:hover,
+#businesses .business-card .card-link:focus-visible,
+#home a#slidePrimary.btn.btn-primary:hover,
+#home a#slidePrimary.btn.btn-primary:focus-visible,
+.business-page-hero .btn.btn-primary:hover,
+.business-page-hero .btn.btn-primary:focus-visible,
+.website-box .card-link:hover,
+.website-box .card-link:focus-visible { animation: none !important; --matched-button-opacity: 1; }
+@media (prefers-reduced-motion: reduce) {
+#businesses .business-card .card-link,
+#home a#slidePrimary.btn.btn-primary,
+.business-page-hero .btn.btn-primary,
+.website-box .card-link { animation: none !important; }
+}

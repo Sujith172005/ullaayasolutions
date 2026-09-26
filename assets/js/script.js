@@ -169,7 +169,7 @@ if (slideTitle) {
 
   function startSlider() {
     clearInterval(slideTimer);
-    slideTimer = setInterval(() => showSlide((slideIndex + 1) % slides.length), 5200);
+    slideTimer = setInterval(() => showSlide((slideIndex + 1) % slides.length), 6500);
   }
 
   function goNext() {
