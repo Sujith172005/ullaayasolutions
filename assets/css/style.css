@@ -6683,7 +6683,7 @@ section.businesses .business-logo-box.business-logo-bumoniis img {
   line-height: 1.35 !important;
   text-align: center !important;
   overflow-wrap: anywhere;
-  background: #175c18 !important;
+  background: #28833d !important;
   color: #ffffff !important;
   animation: brand-button-blink 1.80s ease-in-out infinite;
 }
@@ -6708,28 +6708,29 @@ section.businesses .business-logo-box.business-logo-bumoniis img {
 .website-box .card-link { animation: none; }
 }
 /* Shared animation matches the home business buttons exactly. */
-@property --matched-halo-size { syntax: "<length>"; inherits: false; initial-value: 0px; }
-@property --matched-halo-color { syntax: "<color>"; inherits: false; initial-value: rgba(195,180,7,0); }
+@property --matched-halo-size { syntax: "<length>"; inherits: false; initial-value: 2px; }
+@property --matched-halo-color { syntax: "<color>"; inherits: false; initial-value: rgba(212,175,55,.18); }
 @property --matched-button-opacity { syntax: "<number>"; inherits: false; initial-value: 1; }
 #businesses .business-card .card-link,
 #home a#slidePrimary.btn.btn-primary,
 .business-page-hero .btn.btn-primary,
 .website-box .card-link {
   border-radius: 999px !important;
-  box-shadow: 0 0 0 var(--matched-halo-size) var(--matched-halo-color) !important;
-  opacity: var(--matched-button-opacity) !important;
-  animation: matched-business-blink 1.8s ease-in-out infinite !important;
+  box-shadow: 0 0 0 3.8px #d4af37, 0 0 14px var(--matched-halo-size) var(--matched-halo-color) !important;
+  opacity: 1 !important;
+  filter: none !important;
+  animation: matched-business-blink 2.6s ease-in-out infinite !important;
 }
 @keyframes matched-business-blink {
   0%, 100% {
-    --matched-button-opacity: 1;
-    --matched-halo-size: 0px;
-    --matched-halo-color: rgba(195,180,7,0);
+    --matched-button-opacity: 10;
+    --matched-halo-size: 10px;
+    --matched-halo-color: rgba(212, 207, 83, 0.18);
   }
   50% {
-    --matched-button-opacity: .72;
-    --matched-halo-size: 6px;
-    --matched-halo-color: rgba(185,160,17,.24);
+    --matched-button-opacity: 10;
+    --matched-halo-size: 10px;
+    --matched-halo-color: rgba(230,185,45,.55);
   }
 }
 #businesses .business-card .card-link:hover,
@@ -6739,10 +6740,17 @@ section.businesses .business-logo-box.business-logo-bumoniis img {
 .business-page-hero .btn.btn-primary:hover,
 .business-page-hero .btn.btn-primary:focus-visible,
 .website-box .card-link:hover,
-.website-box .card-link:focus-visible { animation: none !important; --matched-button-opacity: 1; }
+.website-box .card-link:focus-visible { animation: matched-business-blink 1.8s ease-in-out infinite !important; --matched-button-opacity: 1; }
 @media (prefers-reduced-motion: reduce) {
 #businesses .business-card .card-link,
 #home a#slidePrimary.btn.btn-primary,
 .business-page-hero .btn.btn-primary,
 .website-box .card-link { animation: none !important; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+#businesses .business-card .card-link:is(:hover, :focus-visible),
+#home a#slidePrimary.btn.btn-primary:is(:hover, :focus-visible),
+.business-page-hero .btn.btn-primary:is(:hover, :focus-visible),
+.website-box .card-link:is(:hover, :focus-visible) { animation: none !important; }
 }
