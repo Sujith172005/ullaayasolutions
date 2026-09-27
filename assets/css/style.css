@@ -6662,7 +6662,7 @@ section.businesses .business-logo-box.business-logo-bumoniis img {
   opacity: 1 !important;
   filter: none !important;
   animation: none !important;
-  box-shadow: 0 0 0 3.8px #0c0a06, 0 0 22px 0px rgba(232,178,39,.18) !important;
+  box-shadow: 0 0 0 3.8px 25302b, 0 0 22px 0px rgba(232,178,39,.18) !important;
   transition: background-color 900ms ease-in-out, color 900ms ease-in-out, box-shadow 900ms ease-in-out !important;
 }
 #businesses .business-card .card-link {
@@ -6675,7 +6675,7 @@ section.businesses .business-logo-box.business-logo-bumoniis img {
 .website-box .card-link.website-gold-phase {
   background: #ffd35a !important;
   color: #163d22 !important;
-  box-shadow: 0 0 0 3.8px #0a0904, 0 0 22px 5px rgba(20, 17, 11, 0.65) !important;
+  box-shadow: 0 0 0 3.8px 25302b, 0 0 22px 5px rgba(20, 17, 11, 0.65) !important;
 }
 @media (max-width: 620px) {
 #businesses .business-card .card-link,
