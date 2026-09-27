@@ -6637,31 +6637,9 @@ section.businesses .business-logo-box.business-logo-bumoniis img {
   width: 100% !important;
   min-width: 0;
 }
-#businesses .business-card .card-link {
-  box-sizing: border-box;
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  width: 220px !important;
-  min-width: 0 !important;
-  max-width: 100% !important;
-  min-height: 52px;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  text-align: center !important;
-}
-#businesses .card-link:hover,
-#businesses .card-link:focus-visible {
-  animation: none;
-  opacity: 1;
-}
-@media (prefers-reduced-motion: reduce) {
-  #businesses .business-card .card-link { animation: none; }
-}
-
-/* Consistent website button sizing and colour. */
+/* Shared website button style; animation controlled by website-buttons.js. */
 #businesses .business-card .card-link,
-#home #slidePrimary,
+#home a#slidePrimary.btn.btn-primary,
 .business-page-hero .btn.btn-primary,
 .website-box .card-link {
   box-sizing: border-box !important;
@@ -6680,63 +6658,39 @@ section.businesses .business-logo-box.business-logo-bumoniis img {
   overflow-wrap: anywhere;
   background: #0b9238 !important;
   color: #ffffff !important;
-}
-#businesses .business-card .card-link:hover,
-#home #slidePrimary:hover,
-.business-page-hero .btn.btn-primary:hover,
-.website-box .card-link:hover,
-#businesses .business-card .card-link:focus-visible,
-#home #slidePrimary:focus-visible,
-.business-page-hero .btn.btn-primary:focus-visible,
-.website-box .card-link:focus-visible { animation: none; opacity: 1; }
-@media (max-width: 620px) {
-#businesses .business-card .card-link,
-#home #slidePrimary,
-.business-page-hero .btn.btn-primary,
-.website-box .card-link { width: 250px !important; min-height: 60px !important; font-size: 19px !important; padding: 15px 18px !important; }
-}
-@media (prefers-reduced-motion: reduce) {
-#businesses .business-card .card-link,
-#home #slidePrimary,
-.business-page-hero .btn.btn-primary,
-.website-box .card-link { animation: none; }
-}
-/* Whole-button green/gold bloom. Animated variables override legacy important colours. */
-@property --bloom-fill { syntax: "<color>"; inherits: false; initial-value: #0b9238; }
-@property --bloom-text { syntax: "<color>"; inherits: false; initial-value: #ffffff; }
-@property --bloom-glow { syntax: "<color>"; inherits: false; initial-value: rgba(232, 178, 39, .18); }
-@property --bloom-spread { syntax: "<length>"; inherits: false; initial-value: 0px; }
-#businesses .business-card .card-link,
-#home a#slidePrimary.btn.btn-primary,
-.business-page-hero .btn.btn-primary,
-.website-box .card-link {
-  background: var(--bloom-fill, #0b9238) !important;
-  color: var(--bloom-text, #ffffff) !important;
   border-radius: 999px !important;
   opacity: 1 !important;
   filter: none !important;
-  box-shadow: 0 0 0 3.8px #d4af37, 0 0 22px var(--bloom-spread, 0px) var(--bloom-glow, rgba(232,178,39,.18)) !important;
-  animation: website-button-bloom 3.0s ease-in-out infinite !important;
+  animation: none !important;
+  box-shadow: 0 0 0 3.8px #d4af37, 0 0 22px 0px rgba(232,178,39,.18) !important;
+  transition: background-color 900ms ease-in-out, color 900ms ease-in-out, box-shadow 900ms ease-in-out !important;
 }
-@keyframes website-button-bloom {
-  0%, 15%, 100% {
-    --bloom-fill: #0b9238;
-    --bloom-text: #ffffff;
-    --bloom-glow: rgba(232, 178, 39, .18);
-    --bloom-spread: 0px;
-  }
-  45%, 60% {
-    --bloom-fill: #ffd35a;
-    --bloom-text: #163d22;
-    --bloom-glow: rgba(242, 183, 35, .65);
-    --bloom-spread: 5px;
-  }
+#businesses .business-card .card-link {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+#businesses .business-card .card-link.website-gold-phase,
+#home a#slidePrimary.btn.btn-primary.website-gold-phase,
+.business-page-hero .btn.btn-primary.website-gold-phase,
+.website-box .card-link.website-gold-phase {
+  background: #ffd35a !important;
+  color: #163d22 !important;
+  box-shadow: 0 0 0 3.8px #d4af37, 0 0 22px 5px rgba(242,183,35,.65) !important;
+}
+@media (max-width: 620px) {
+#businesses .business-card .card-link,
+#home a#slidePrimary.btn.btn-primary,
+.business-page-hero .btn.btn-primary,
+.website-box .card-link {
+  width: 250px !important;
+  min-height: 60px !important;
+  font-size: 19px !important;
+  padding: 15px 18px !important;
+}
 }
 @media (prefers-reduced-motion: reduce) {
 #businesses .business-card .card-link,
 #home a#slidePrimary.btn.btn-primary,
 .business-page-hero .btn.btn-primary,
-.website-box .card-link {
-    animation: none !important;
-  }
+.website-box .card-link { transition: none !important; }
 }
