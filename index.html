@@ -19,7 +19,7 @@
         rel="stylesheet" />
     <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">    
-    <link href="assets/css/style.css?v=gold-fix-20260927-1416" rel="stylesheet">
+    <link href="assets/css/style.css?v=20261003-expertise-icons?v=gold-fix-20260927-1416" rel="stylesheet">
     </link>
 </head>
 
@@ -172,28 +172,28 @@
                     <h3>We offer practical solutions, resources, and professional support across key areas to help businesses build, expand, and succeed.</h3>
                 </div>
                 <div class="service-grid">
-                    <div class="service-card reveal"><span>🏢</span>
+                    <div class="service-card reveal" tabindex="0"><span class="expertise-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10h16v10H4zM7 10V7h10v3M8 7V4m4 3V4m4 3V4M4 15c2-2 3 2 5 0s3 2 5 0 4 0 6 0"/></svg></span>
                         <h3>Quality Baking & Food Products</h3>
                     </div>
-                    <div class="service-card reveal"><span>🍫</span>
+                    <div class="service-card reveal" tabindex="0"><span class="expertise-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m3 6 8-4 8 4-8 4-8-4zm0 0v12l8 4 4-2M11 10v12M7 4l8 4v4"/><path d="M16 13h4l3 3-6 6-4-4v-4l3-1z"/><circle cx="17" cy="16" r=".7"/></svg></span>
                         <h3>B2B Manufacturing & Private Label Solutions</h3>
                     </div>
-                    <div class="service-card reveal"><span>🤝</span>
+                    <div class="service-card reveal" tabindex="0"><span class="expertise-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m2 8 10-5 10 5-10 5L2 8zm4 2v7c4 3 8 3 12 0v-7M22 8v8"/></svg></span>
                         <h3>Professional Baking Training & Skill Development </h3>
                     </div>
-                    <div class="service-card reveal"><span>🎓</span>
+                    <div class="service-card reveal" tabindex="0"><span class="expertise-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20V4m0 16h18M6 15l5-5 4 3 6-8m-5 0h5v5"/></svg></span>
                         <h3>Market Development & Growth</h3>
                     </div>
-                    <div class="service-card reveal"><span>🧁</span>
+                    <div class="service-card reveal" tabindex="0"><span class="expertise-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v17H4zM4 9h16M7 6h.01M12 6h.01M17 6h.01M7 12h10v6H7z"/></svg></span>
                         <h3>Commercial Kitchen & Practice Facilities </h3>
                     </div>
-                    <div class="service-card reveal"><span>📦</span>
+                    <div class="service-card reveal" tabindex="0"><span class="expertise-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="14" rx="2"/><path d="M8 7V4h8v3M3 12c6 4 12 4 18 0M10 13h4v3h-4z"/></svg></span>
                         <h3>Business Setup & Development Support </h3>
                     </div>
-                    <div class="service-card reveal"><span>💻</span>
+                    <div class="service-card reveal" tabindex="0"><span class="expertise-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 7h13v11H2zM15 11h4l3 4v3h-7M2 4h9"/><circle cx="6" cy="19" r="2"/><circle cx="18" cy="19" r="2"/></svg></span>
                         <h3>Direct Sourcing & Supply </h3>
                     </div>
-                    <div class="service-card reveal"><span>📲</span>
+                    <div class="service-card reveal" tabindex="0"><span class="expertise-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 17h6m-6 3h6M8 13a6 6 0 1 1 8 0c-1 1-1 2-1 4H9c0-2 0-3-1-4M12 1v1M3 5l1 1m16 0 1-1"/></svg></span>
                         <h3>Entrepreneurship & Skill Development</h3>
                     </div>
                 </div>
@@ -267,6 +267,16 @@
     <a aria-label="For enquiry" class="floating-whatsapp" href="https://wa.me/919886916067">Join us</a>
     <script src="assets/js/script.js"></script>
 <script src="assets/js/website-buttons.js?v=gold-fix-20260927-1416"></script>
+<script>
+ document.querySelectorAll('#provide .service-card').forEach(card => {
+   card.addEventListener('pointerdown', event => {
+     if (event.pointerType === 'touch') {
+       document.querySelectorAll('#provide .service-card').forEach(item => item.classList.remove('icon-touched'));
+       card.classList.add('icon-touched');
+     }
+   });
+ });
+</script>
 </body>
 
 </html>

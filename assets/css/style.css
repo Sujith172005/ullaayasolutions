@@ -6272,7 +6272,7 @@ html {
 
 .sarvathaa-provide-card > img {
   width: 100%;
-  height: 220px;
+  height: 250px;
   display: block;
   object-fit: cover;
   object-position: center;
@@ -6694,3 +6694,33 @@ section.businesses .business-logo-box.business-logo-bumoniis img {
 .business-page-hero .btn.btn-primary,
 .website-box .card-link { transition: none !important; }
 }
+
+/* Home expertise: title-matched outline icons with green interaction states. */
+#provide .service-card .expertise-icon {
+ display: inline-flex; align-items: center; justify-content: center;
+ width: 60px; height: 60px; flex-shrink: 0; border-radius: 18px;
+ background: #edf7f0; color: #168346; padding: 14px; line-height: 1;
+ transition: background-color .22s ease, color .22s ease, box-shadow .22s ease;
+}
+#provide .expertise-icon svg { display: block; width: 32px; height: 32px; }
+#provide .service-card:hover .expertise-icon,
+#provide .service-card:focus .expertise-icon,
+#provide .service-card.icon-touched .expertise-icon {
+ background: #168346; color: #fff; box-shadow: 0 5px 14px #16834626;
+}
+#provide .service-card:focus-visible { outline: 2px solid #168346; outline-offset: 4px; }
+
+/* Osunss provides: outline icons and green hover/touch states. */
+#osun-provides .detail-card .osun-service-icon {
+ display: inline-flex; align-items: center; justify-content: center;
+ width: 60px; height: 60px; padding: 14px; border-radius: 18px;
+ background: #edf7f0; color: #168346; line-height: 1; flex-shrink: 0;
+ transition: background-color .22s ease, color .22s ease, box-shadow .22s ease;
+}
+#osun-provides .osun-service-icon svg { display: block; width: 32px; height: 32px; }
+#osun-provides .detail-card:hover .osun-service-icon,
+#osun-provides .detail-card:focus .osun-service-icon,
+#osun-provides .detail-card.icon-touched .osun-service-icon {
+ background: #168346; color: #fff; box-shadow: 0 5px 14px #16834626;
+}
+#osun-provides .detail-card:focus-visible { outline: 2px solid #168346; outline-offset: 4px; }
