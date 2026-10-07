@@ -168,7 +168,7 @@ img {
   text-transform: uppercase;
   letter-spacing: .14em;
   font-size: .98rem;
-  margin-bottom: 16px
+  margin-bottom: 10px
 }
 
 .eyebrow::before {
@@ -181,7 +181,7 @@ img {
 
 h1,
 h2 {
-  font-family: "Playfair Display", serif;
+  font-family: Inter, "Segoe UI", Arial, sans-serif;
   color: var(--dark);
   line-height: 1.04
 }
@@ -320,7 +320,7 @@ h3 {
 
 .section-copy p:not(.eyebrow),
 .section-head p {
-  color: var(--text);
+  color: #111111;
   font-size: 1.05rem;
   margin-top: 16px
 }
@@ -542,7 +542,7 @@ margin-bottom: 14px;
   padding: 16px 18px;
   background: white;
   border-radius: 18px;
-  color: var(--deep);
+  color: #111111;
   font-weight: 800;
   box-shadow: 0 10px 28px rgba(18, 79, 38, .08)
 }
@@ -881,13 +881,13 @@ margin-bottom: 14px;
 }
 
 .detail-section {
-  padding: 30px 0
+  padding: 38px 0
 }
 
 .detail-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 22px
+  gap: 30px
 }
 
 .detail-card {
@@ -908,7 +908,7 @@ margin-bottom: 14px;
 }
 
 .detail-card p {
-  color: var(--muted)
+  color: #33373c;
 }
 
 .highlight-panel {
@@ -2003,12 +2003,6 @@ h1 {
   background: linear-gradient(135deg, #ffffff 0%, #fffdf8 55%, #f7f6ee 100%) !important;
 }
 
-/* Clean normal dropdown: remove green dot points */
-.dropdown-menu a::before {
-  display: none !important;
-  content: none !important;
-}
-
 .dropdown-menu a {
   gap: 0 !important;
   padding: 14px 18px !important;
@@ -2333,18 +2327,6 @@ h1 {
 
 .why {
   background: linear-gradient(135deg, #0d331c, #123d24 58%, #2a2415) !important
-}
-
-.why-list div::before {
-  color: var(--gold) !important
-}
-
-.eyebrow {
-  color: var(--gold) !important
-}
-
-.eyebrow::before {
-  background: var(--gold) !important
 }
 
 .btn-primary {
@@ -2837,7 +2819,7 @@ h2 {
    font-size: 1.03rem !important;
    line-height: 1.57!important;
    text-align: justify;
-   color: (var(--text));
+   color: #111111;
 
 }
 
@@ -3353,14 +3335,6 @@ h2 {
   color: #fff !important;
 }
 
-.slider-prev {
-  left: 18px !important;
-}
-
-.slider-next {
-  right: 18px !important;
-}
-
 .businesses .business-grid {
   display: grid !important;
   grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
@@ -3615,7 +3589,7 @@ h2 {
 
 /* ===== Final correction: wide hero, inside arrows, horizontal business rows, cleaner font ===== */
 :root {
-  --heading-font: "Playfair Display", Georgia, serif;
+  --heading-font: Inter, "Segoe UI", Arial, sans-serif;
   --body-font: Inter, system-ui, sans-serif;
 }
 
@@ -3639,7 +3613,7 @@ h1,h2  { font-family: var(--heading-font) !important;
   color: #111a14 !important;
   font-weight: 800 !important;
   font-size: 3.2rem;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 h3 {
   font-family: var(--heading-font) !important;
@@ -3716,9 +3690,6 @@ h3 {
   color: #ffffff !important;
   outline: none !important;
 }
-
-.slider-prev { left: 16px !important; }
-.slider-next { right: 16px !important; }
 
 /* Business cards: one clean horizontal row per brand */
 .businesses .business-grid {
@@ -3942,7 +3913,7 @@ h3 {
 .section-head h2,
 .business-card h3,
 .footer h3 {
-  font-family: Georgia, 'Times New Roman', serif !important;
+  font-family: Inter, "Segoe UI", Arial, sans-serif !important;
 }
 
 /* Our Business: each brand as a clean horizontal row */
@@ -4025,7 +3996,7 @@ h3 {
   font-size: 1.06rem !important;
   line-height: 1.65 !important;
   margin: 0 !important;
-  color: #314238 !important;
+  color: #111111 !important;
 }
 
 .business-card .card-link {
@@ -4053,7 +4024,7 @@ h3 {
 .footer p,
 .footer a,
 .copyright {
-  color: #314238 !important;
+  color: #111111!important;
 }
 
 .footer a {
@@ -4415,7 +4386,7 @@ h3 {
 
 .hero h1,
 #slideTitle {
-  font-family: Georgia, 'Times New Roman', serif !important;
+  font-family: Inter, "Segoe UI", Arial, sans-serif !important;
   font-size: clamp(2.25rem, 3.35vw, 3.45rem) !important;
   line-height: 1.06 !important;
   letter-spacing: -.035em !important;
@@ -4428,7 +4399,7 @@ h3 {
   line-height: 1.6 !important;
   max-width: 570px !important;
   margin: 14px 0 18px !important;
-  color: #4d5a54 !important;
+  color: #111111 !important;
 }
 
 .hero-actions {
@@ -4555,7 +4526,7 @@ h3 {
 /* Our Businesses: bigger logos and clearer content */
 .businesses .section-head h2,
 .section.businesses .section-head h2 {
-  font-family: Georgia, 'Times New Roman', serif !important;
+  font-family: Inter, "Segoe UI", Arial, sans-serif !important;
   font-size: clamp(2.1rem, 3vw, 3.1rem) !important;
 }
 
@@ -4600,7 +4571,7 @@ h3 {
 .business-logo-sarvathaa img { max-width: 280px !important; max-height: 200px !important; }
 
 .business-card.logo-card h3 {
-  font-family: Georgia, 'Times New Roman', serif !important;
+  font-family: Inter, "Segoe UI", Arial, sans-serif !important;
   font-size: 2.08rem !important;
   line-height: 1.1 !important;
   margin: 4px 0 10px !important;
@@ -4743,7 +4714,7 @@ h3 {
 
 .provide .service-grid,
 .section.provide .service-grid {
-  gap: 18px !important;
+  gap: 30px !important;
 }
 
 .provide .service-card,
@@ -4981,14 +4952,6 @@ body {
   top: 50% !important;
   transform: translateY(-50%) !important;
   z-index: 6 !important;
-}
-
-.slider-prev {
-  left: 18px !important;
-}
-
-.slider-next {
-  right: 18px !important;
 }
 
 .slider-dots {
@@ -5774,10 +5737,6 @@ html {
   align-items: center !important;
 }
 
-#home.hero.business-slider .hero-content {
-  align-self: center !important;
-}
-
 #home.hero.business-slider .hero-content .eyebrow {
   margin-bottom: 8px !important;
 }
@@ -6201,7 +6160,7 @@ html {
   margin: 0 0 8px !important;
 }
 .footer-address strong {
-  color: var(--deep) !important;
+  color:#111111;
   display: inline-block;
 }
 .footer .footer-address + a {
@@ -6740,3 +6699,123 @@ section.businesses .business-logo-box.business-logo-bumoniis img {
  background: #168346; color: #fff; box-shadow: 0 5px 14px #16834626;
 }
 #osun-provides .detail-card:focus-visible { outline: 2px solid #168346; outline-offset: 4px; }
+
+/* Ullaaya refreshed colours and clean typography — October 2026. */
+:root {
+  --green: #15803d;
+  --deep: #166534;
+  --dark: #14532d;
+  --mint: #f0fff4;
+  --soft: #f2fbf5;
+  --text: #334155;
+  --muted: #475569;
+}
+body { background: #fff; color: var(--text); }
+h1, h2, h3, #slideTitle, .hero h1, .business-page-hero h1,
+.section-head h2, .businesses .section-head h2, .section.businesses .section-head h2,
+.business-card h3, .footer h3 {
+  font-family: Inter, "Segoe UI", Arial, sans-serif !important;
+  font-weight: 700 !important;
+  letter-spacing: -.025em !important;
+  line-height: 1.18 !important;
+  color: #111111 !important;
+}
+.hero h1, #slideTitle, .business-page-hero h1 {
+  font-size: clamp(2rem, 3.2vw, 3.25rem) !important;
+  text-wrap: balance;
+}
+.section-head h2 { font-size: clamp(1.75rem, 2.7vw, 2.65rem) !important; }
+.hero, #home.hero.business-slider, .business-page-hero {
+  background: linear-gradient(120deg, #f0fff4 0%, #e0f8e8 55%, #c8f0d5 100%) !important;
+}
+.hero-bg { background: none !important; }
+.hero-card, .business-logo-frame { background: #fff !important; }
+.section, .businesses, .provide, .highlight-panel { background: #fff !important; }
+#businesses, #provide { background: #f2fbf5 !important; }
+.eyebrow, .section-head .eyebrow, .section-copy .eyebrow, .hero .eyebrow, .why .eyebrow, .highlight-panel .eyebrow { color: var(--gold, #b7843c) !important; }
+.eyebrow::before { background: var(--gold, #b7843c) !important; }
+.business-card, .service-card, .detail-card {
+  background: #fff !important;
+  border-color: #d7ecde !important;
+  box-shadow: 0 8px 28px rgba(20,83,45,.08) !important;
+}
+.nav-cta { background: #15803d !important; color: #fff !important; }
+.nav-cta:hover { background: #166534 !important; }
+.footer { background: #e6f7ec !important; }
+@media (max-width: 620px) {
+  .hero h1, #slideTitle, .business-page-hero h1 {
+    font-size: clamp(1.8rem, 7.5vw, 2.35rem) !important;
+    line-height: 1.22 !important;
+  }
+}
+
+#home.hero.business-slider .hero-content h1 {
+ font-size: clamp(2rem, 3.2vw, 3.25rem) !important;
+ line-height: 1.18 !important;
+}
+@media (max-width:620px) {
+ #home.hero.business-slider .hero-content h1 {
+  font-size: clamp(1.8rem, 7.5vw, 2.35rem) !important;
+  line-height: 1.22 !important;
+ }
+}
+
+/* Photo correction: black hero titles, retaining the clean font. */
+.hero h1, #slideTitle, .business-page-hero h1,
+#home.hero.business-slider .hero-content h1 {
+ color: #111111 !important;
+}
+
+/* Home banner: crisp white brand panel against the mint background. */
+#home.hero.business-slider .hero-card {
+ background: #ffffff !important;
+ background-image: none !important;
+ border: 1px solid #dcebe1 !important;
+ box-shadow: 0 16px 40px rgba(20, 83, 45, .12) !important;
+}
+#home.hero.business-slider .hero-card .logo-orbit,
+#home.hero.business-slider .hero-card .slider-logo-wrap {
+ background: transparent !important;
+ background-image: none !important;
+}
+
+/* Bumoniis: constrain intrinsic logo dimensions to match the Osunss card. */
+.bumoniis-compact-banner.business-page-hero .business-page-logo-wrap .business-page-logo {
+ height: 360px !important;
+ min-height: 360px !important;
+ max-height: 360px !important;
+ padding: 28px 34px 64px !important;
+ overflow: hidden;
+}
+.bumoniis-compact-banner.business-page-hero .business-page-logo-wrap .business-page-logo img {
+ width: 100% !important;
+ height: 260px !important;
+ max-width: 100% !important;
+ max-height: 260px !important;
+ object-fit: contain !important;
+}
+.bumoniis-compact-banner .hero-text {
+ font-size: 1.1rem !important;
+ line-height: 1.55 !important;
+ margin-top: 18px !important;
+ margin-bottom: 24px !important;
+}
+@media (max-width: 980px) {
+ .bumoniis-compact-banner.business-page-hero .business-page-logo-wrap .business-page-logo {
+  height: 300px !important; min-height: 300px !important; max-height: 300px !important;
+  padding: 24px 28px 54px !important;
+ }
+ .bumoniis-compact-banner.business-page-hero .business-page-logo-wrap .business-page-logo img {
+  height: 220px !important; max-height: 220px !important;
+ }
+}
+@media (max-width: 620px) {
+ .bumoniis-compact-banner.business-page-hero .business-page-logo-wrap .business-page-logo {
+  height: 240px !important; min-height: 240px !important; max-height: 240px !important;
+  padding: 20px !important;
+ }
+ .bumoniis-compact-banner.business-page-hero .business-page-logo-wrap .business-page-logo img {
+  height: 200px !important; max-height: 200px !important;
+ }
+ .bumoniis-compact-banner .hero-text { font-size: 1rem !important; }
+}
